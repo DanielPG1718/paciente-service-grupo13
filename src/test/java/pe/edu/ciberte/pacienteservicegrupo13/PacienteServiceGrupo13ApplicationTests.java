@@ -44,7 +44,7 @@ class PacienteServiceGrupo13ApplicationTests {
 
     @Test
     void pacienteInexistenteResponde404() throws Exception {
-        assertEquals(404, consultar("/api/v1/pacientes/999").statusCode());
+        assertEquals(404, consultar("/api/v1/pacientes/3").statusCode());
     }
 
     private HttpResponse<String> consultar(String ruta) throws Exception {
